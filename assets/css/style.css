@@ -117,12 +117,16 @@
  }
 
  .lista{
-    padding: 20px;
+    padding: 30px;
     list-style: none;
  
  }
 
-a{
+.optionnav{
 
   color: aliceblue;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
