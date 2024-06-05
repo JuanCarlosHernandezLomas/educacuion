@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
 .spectral-extralight {
     font-family: "Spectral", serif;
     font-weight: 200;
@@ -84,7 +89,10 @@
   
   body{
     margin: 0%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    
+
+
   }
   #institution{ 
 
@@ -100,7 +108,7 @@
     transition: all 0.5s;
     padding: 0px 0;
     background: #0c104e;
-    position: fixed;
+    position: static;
     display: flex;
     flex-wrap: wrap;
 }
@@ -130,3 +138,49 @@
   font-weight: 600;
   font-style: normal;
 }
+.container_carusel{
+  
+  padding: 1px;
+  width: 1390px;
+  height: 400px;
+  background: red; 
+  position: relative;
+  overflow: hidden;
+  
+}
+.caruseles{
+  display: flex;
+  width: 300%;
+  height: 100%;
+  background-color: aqua;
+}
+.slider-section img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.slider-section{
+  width: calc(100% /3);
+}
+ .btn-left,
+ .btn-right{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  color: black;
+  transform: translate(0, -50%);
+  transition: .5s ease;
+  user-select: none;
+ }
+ .btn-right{
+  right: 10px;
+ }
+ .btn-left{
+  left: 10px;
+ }
