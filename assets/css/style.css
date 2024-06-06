@@ -102,7 +102,7 @@
  }
  header {
 
-    width: 100%;
+
     transition: all 0.5s;
     z-index: 999;
     transition: all 0.5s;
@@ -141,7 +141,6 @@
 .container_carusel{
   
   padding: 1px;
-  width: 1390px;
   height: 400px;
   background: red; 
   position: relative;
@@ -153,6 +152,7 @@
   width: 300%;
   height: 100%;
   background-color: aqua;
+  
 }
 .slider-section img{
   width: 100%;
@@ -184,3 +184,24 @@
  .btn-left{
   left: 10px;
  }
+ /* Media queries */
+/* Pantalla pequeña (menos de 600px) */
+@media (max-width: 600px) {
+  section {
+      width: 100%; /* Ancho del section en pantalla pequeña */
+  }
+}
+
+/* Pantalla mediana (entre 600px y 1200px) */
+@media (min-width: 600px) and (max-width: 1200px) {
+  section {
+      width: 60%; /* Ancho del section en pantalla mediana */
+  }
+}
+
+/* Pantalla grande (más de 1200px) */
+@media (min-width: 1200px) {
+  section {
+      width: 40%; /* Ancho del section en pantalla grande */
+  }
+}
